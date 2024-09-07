@@ -16,7 +16,7 @@ except Exception as e:
 STAGE_NAME = "Data Validation Stage"
 try:
     logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<<<")
-    obj = DataIngestionTrainingPipline()
+    obj = DataValidationTrainingPipeline()
     obj.main()
     logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<<<\n\nx==========x")
 except Exception as e:
